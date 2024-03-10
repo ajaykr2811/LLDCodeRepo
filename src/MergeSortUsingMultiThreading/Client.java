@@ -9,7 +9,7 @@ import java.util.concurrent.Future;
 
 public class Client {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
-        List<Integer> list = List.of(6,5,7,4,8,3,0,2,1);
+        List<Integer> list = List.of(6,5,7,4,8,3,-876,44,0,2,1);
         ExecutorService executorService = Executors.newCachedThreadPool();
 
         MergerSorter mergerSorter = new MergerSorter(list,executorService);
