@@ -1,6 +1,4 @@
-package Synchronization.WithSyncronizationKeyword;
-
-import java.util.concurrent.locks.Lock;
+package Synchronization.SyncronizedKeyword;
 
 public class Adder implements Runnable{
     Counter counter;

@@ -1,6 +1,4 @@
-package Synchronization.WithSyncronizationKeyword;
-
-import java.util.concurrent.locks.Lock;
+package Synchronization.SyncronizedKeyword;
 
 public class Subtrator implements Runnable{
     Counter counter;

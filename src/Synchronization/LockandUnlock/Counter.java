@@ -1,4 +1,4 @@
-package Synchronization.withLock;
+package Synchronization.LockandUnlock;
 
 public class Counter {
     int count;

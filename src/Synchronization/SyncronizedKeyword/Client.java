@@ -1,7 +1,4 @@
-package Synchronization.WithSyncronizationKeyword;
-
-import java.util.concurrent.locks.Lock;
-import java.util.concurrent.locks.ReentrantLock;
+package Synchronization.SyncronizedKeyword;
 
 public class Client {
     public static void main(String[] args) throws InterruptedException {

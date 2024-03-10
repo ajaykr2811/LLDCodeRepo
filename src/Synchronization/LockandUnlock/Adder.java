@@ -1,4 +1,4 @@
-package Synchronization.withLock;
+package Synchronization.LockandUnlock;
 
 import java.util.concurrent.locks.Lock;
 
