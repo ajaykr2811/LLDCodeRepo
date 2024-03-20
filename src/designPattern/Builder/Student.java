@@ -1,10 +1,10 @@
 package designPattern.Builder;
 
 public class Student {
-    public String name;
-    public int age;
-    public int psp;
-    public String batch;
+    String name;
+    int age;
+    int psp;
+    String batch;
 
     private Student(Builder builder){
         this.name = builder.name;
@@ -15,6 +15,16 @@ public class Student {
 
     static Builder builder(){
         return new Builder();
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", psp=" + psp +
+                ", batch='" + batch + '\'' +
+                '}';
     }
 
     static class Builder{

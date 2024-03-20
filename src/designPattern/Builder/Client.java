@@ -9,6 +9,6 @@ public class Client {
                 .setBatch("Morning 9:00")
                 .build();
 
-        System.out.print(st.toString());
+        System.out.print(st);
     }
 }
