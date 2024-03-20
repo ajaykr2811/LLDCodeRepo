@@ -5,9 +5,13 @@ public class Student {
     public int age;
     public int psp;
     public String batch;
-    static Builder builder = null;
 
-    private Student(){}
+    private Student(Builder builder){
+        this.name = builder.name;
+        this.batch = builder.batch;
+        this.age = builder.age;
+        this.psp = builder.psp;
+    }
 
     static Builder builder(){
         return new Builder();
@@ -49,13 +53,7 @@ public class Student {
                 throw new RuntimeException("psp must be 80 or above");
             }
             //validation ends
-
-            Student st = new Student();
-            st.age = this.age;
-            st.name = this.name;
-            st.psp = this.psp;
-            st.batch = this.batch;
-            return st;
+            return new Student(this);
         }
     }
 }
