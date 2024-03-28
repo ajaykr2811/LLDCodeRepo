@@ -21,6 +21,14 @@ public class Client {
         mar.setTime("Evening 6:00");
         mar.setBatch(Batches.March);
         studentRegistry.register(Batches.March,mar);
+
+        IntelligentStudent nov = new IntelligentStudent();
+        nov.setPsp(93.0);
+        nov.setTime("Night 9:00");
+        nov.setIq(98);
+        nov.setBatch(Batches.November);
+        studentRegistry.register(Batches.November,nov);
+
     }
     public static void main(String[] args) {
         StudentRegistry studentRegistry = new StudentRegistry();
@@ -29,6 +37,12 @@ public class Client {
         Student karan = studentRegistry.get(Batches.January).cloneObject();
         karan.setName("Karan");
         karan.setAge(25);
+
+        Student koko = studentRegistry.get(Batches.November).cloneObject();
+
+        //(Additional) if you want to set IQ later, typecase is required
+        IntelligentStudent koko2 = (IntelligentStudent)koko;
+
 
         System.out.println("Debug");
     }

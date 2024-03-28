@@ -1,19 +1,25 @@
 package designPattern.Prototype;
 
-public class Student implements ClonableObject{
+public class Student implements ClonableObject<Student>{
     private String name;
     private int age;
     private Batches batch;
     private double psp;
     private String time;
-    private int iq;
-    public Student(String name, int age, Batches batch, double psp, String time,int iq) {
+    public Student(String name, int age, Batches batch, double ßpsp, String time) {
         this.name = name;
         this.age = age;
         this.batch = batch;
         this.psp = psp;
         this.time = time;
-        this.iq = iq;
+    }
+
+    public Student(Student student) {
+        this.name = student.name;
+        this.age = student.age;
+        this.batch = student.batch;
+        this.psp = student.psp;
+        this.time = student.time;
     }
 
     public Student() {
@@ -59,16 +65,8 @@ public class Student implements ClonableObject{
         return time;
     }
 
-    public int getIq() {
-        return iq;
-    }
-
-    public void setIq(int iq) {
-        this.iq = iq;
-    }
-
     @Override
     public Student cloneObject() {
-        return new Student(name,age,batch,psp,time,iq);
+        return new Student(this);
     }
 }
