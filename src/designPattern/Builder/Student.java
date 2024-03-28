@@ -6,7 +6,7 @@ public class Student {
     int psp;
     String batch;
 
-    private Student(Builder builder){
+    public Student(Builder builder){
         this.name = builder.name;
         this.batch = builder.batch;
         this.age = builder.age;
