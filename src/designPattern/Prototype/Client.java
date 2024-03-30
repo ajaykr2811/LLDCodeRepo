@@ -40,7 +40,7 @@ public class Client {
 
         Student koko = studentRegistry.get(Batches.November).cloneObject();
 
-        //(Additional) if you want to set IQ later, typecase is required
+        //(Additional) if you want to set IQ later, typecast is required
         IntelligentStudent koko2 = (IntelligentStudent)koko;
 
 
