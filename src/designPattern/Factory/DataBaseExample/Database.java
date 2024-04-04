@@ -1,4 +1,4 @@
-package designPattern.Factory;
+package designPattern.Factory.DataBaseExample;
 
 public interface Database {
     void refresh();

@@ -1,4 +1,4 @@
-package designPattern.Factory;
+package designPattern.Factory.DataBaseExample;
 
 public class client {
     public static void main(String[] args) {

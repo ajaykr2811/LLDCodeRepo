@@ -1,8 +1,6 @@
-package designPattern.Factory;
+package designPattern.Factory.DataBaseExample;
 
-import designPattern.Factory.InsertionOperationDir.MySQLInsertion;
-import designPattern.Factory.QueryDir.MySQLQuery;
-import designPattern.Factory.factoryDir.MysqlDatabaseFactory;
+import designPattern.Factory.DataBaseExample.factoryDir.MysqlDatabaseFactory;
 
 public class MySql implements Database{
     @Override

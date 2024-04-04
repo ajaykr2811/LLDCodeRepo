@@ -1,4 +1,4 @@
-package designPattern.Factory;
+package designPattern.Factory.DataBaseExample;
 
 public interface InsertionOperation {
     void insert();

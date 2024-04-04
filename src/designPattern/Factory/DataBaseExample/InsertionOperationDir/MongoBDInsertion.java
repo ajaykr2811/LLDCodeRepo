@@ -1,6 +1,6 @@
-package designPattern.Factory.InsertionOperationDir;
+package designPattern.Factory.DataBaseExample.InsertionOperationDir;
 
-import designPattern.Factory.InsertionOperation;
+import designPattern.Factory.DataBaseExample.InsertionOperation;
 
 public class MongoBDInsertion implements InsertionOperation {
     @Override

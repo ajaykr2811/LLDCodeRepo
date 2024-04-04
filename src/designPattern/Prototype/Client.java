@@ -39,9 +39,9 @@ public class Client {
         karan.setAge(25);
 
         Student koko = studentRegistry.get(Batches.November).cloneObject();
-
         //(Additional) if you want to set IQ later, typecast is required
         IntelligentStudent koko2 = (IntelligentStudent)koko;
+        koko2.setIq(99);
 
 
         System.out.println("Debug");

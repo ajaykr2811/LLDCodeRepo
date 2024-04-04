@@ -1,9 +1,6 @@
-package designPattern.Factory;
+package designPattern.Factory.DataBaseExample;
 
-import designPattern.Factory.InsertionOperationDir.MongoBDInsertion;
-import designPattern.Factory.QueryDir.MongoDBQuery;
-import designPattern.Factory.factoryDir.MongoDBFactory;
-import designPattern.Factory.factoryDir.MysqlDatabaseFactory;
+import designPattern.Factory.DataBaseExample.factoryDir.MongoDBFactory;
 
 public class MongoDB implements Database{
     @Override
